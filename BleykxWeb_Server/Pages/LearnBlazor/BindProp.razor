@@ -1,20 +1,58 @@
 ﻿@page "/learnBlazor/bindProp"
+@using Bleykx_Models.LearnBlazorModels
 
-<h3>BindProp</h3>
-Name: @Product.Name <br />
-Active: @Product.IsActive<br />
-Price: @Product.Price<br />
-This Product is: @(Product.IsActive?"Active":"Inactive")<br /><br />
-
-Active: <input type="checkbox" @bind-value="@Product.IsActive" checked="@(Product.IsActive?"checked":null)" /> <br/>
-Price: <input type="number" @bind-value="@Product.Price" @bind-value:event="oninput" />
-
+<div class="row border p-3">
+    <h3 class="text-primary">Product summary</h3><hr />
+    Name: @Product.Name
+    <br />
+    Active: @Product.IsActive
+    <br />
+    Price: @Product.Price
+    <br />
+    This Product is: @(Product.IsActive ? "Active" : "Inactive")
+    <br />
+    Property Selected: @selectedProp
+    <br />
+    @if (!String.IsNullOrWhiteSpace(selectedProp))
+    {
+        <p>Property Value: @Product.ProductProperties.FirstOrDefault(prop => prop.Key == selectedProp).Value </p>
+    }
+</div>
+<br />
+<div class="row border p-3">
+    <h3 class="text-primary">Product playground</h3><hr />
+    <div>
+        Active:
+        <input type="checkbox" @bind-value="@Product.IsActive" checked="@(Product.IsActive?"checked":null)" />
+    </div>
+    <div>
+        Price:
+        <input type="number" @bind-value="@Product.Price" @bind-value:event="oninput" />
+    </div>
+    <div>
+        Product Properties:
+        <select @bind="selectedProp">
+            @foreach (var prop in Product.ProductProperties)
+            {
+                <option value="@prop.Key">@prop.Key</option>
+            }
+        </select>
+    </div>
+</div>
 @code {
-    Bleykx_Models.LearnBlazorModels.Demo_Products Product = new()
+    private string selectedProp = "";
+
+    Demo_Product Product = new()
         {
             Id = 1,
             Name = "Rose Candle",
             IsActive = true,
-            Price = 10.99
+            Price = 10.99,
+            ProductProperties = new List<Demo_ProductProp>()
+        {
+            new Demo_ProductProp{Id = 1, Key="Color", Value ="Black"},
+            new Demo_ProductProp{Id = 1, Key="Flavor", Value ="Rose Jasmine"},
+            new Demo_ProductProp{Id = 1, Key="Size", Value ="20oz"},
+        }
         };
 }
