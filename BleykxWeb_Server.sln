@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BleykxWeb_Server", "BleykxW
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BleykxBlazor_Client", "BleykxBlazor_Client\BleykxBlazor_Client.csproj", "{A4E728AD-E285-46EC-81A7-656FC796E6D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bleykx_Models", "Bleykx_Models\Bleykx_Models.csproj", "{AD8B8C9C-1CC4-4362-87F0-E15D0E32B4F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bleykx_Models", "Bleykx_Models\Bleykx_Models.csproj", "{AD8B8C9C-1CC4-4362-87F0-E15D0E32B4F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
