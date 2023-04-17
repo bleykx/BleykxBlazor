@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bleykx_DataAccess\Bleykx_DataAccess.csproj" />
+    <ProjectReference Include="..\Bleykx_Models\Bleykx_Models.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -5,13 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bleykx_DataAccess
+namespace Bleykx_Models
 {
-    public class Category
+    public class CategoryDTO
     {
-        [Key]
         public int Id { get; set; }
         public string? Name { get; set; }
-        public DateTime CreatedDate { get; set; }
     }
 }
