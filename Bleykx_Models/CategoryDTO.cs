@@ -10,6 +10,7 @@ namespace Bleykx_Models
     public class CategoryDTO
     {
         public int Id { get; set; }
+        [Required(ErrorMessage ="Please enter a Name ..")]
         public string? Name { get; set; }
     }
 }

@@ -9,11 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BleykxBlazor_Client", "Bley
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bleykx_Models", "Bleykx_Models\Bleykx_Models.csproj", "{AD8B8C9C-1CC4-4362-87F0-E15D0E32B4F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bleykx_Business", "Bleykx_Business\Bleykx_Business.csproj", "{202FB088-2BA3-4820-A2A2-97B5E4789696}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bleykx_Business", "Bleykx_Business\Bleykx_Business.csproj", "{202FB088-2BA3-4820-A2A2-97B5E4789696}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bleykx_Common", "Bleykx_Common\Bleykx_Common.csproj", "{0A074F43-2DCB-4561-A980-2A790CE19175}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bleykx_Common", "Bleykx_Common\Bleykx_Common.csproj", "{0A074F43-2DCB-4561-A980-2A790CE19175}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bleykx_DataAccess", "Bleykx_DataAccess\Bleykx_DataAccess.csproj", "{F86FECD4-47CF-456D-97C5-E1883D658424}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bleykx_DataAccess", "Bleykx_DataAccess\Bleykx_DataAccess.csproj", "{F86FECD4-47CF-456D-97C5-E1883D658424}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
